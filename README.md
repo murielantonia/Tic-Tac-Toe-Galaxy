@@ -3,11 +3,9 @@
 
 [Idee](#idee)
 
-* Brainstorming 
+[Beginn des Spiels](beginn)
 
-* Beginn des Spiels
-
-* Zeichnendes Tic-Tac-Toe Feldes 
+[Zeichnendes Tic-Tac-Toe Feldes](feld) 
 
 * Bennenung, Nummerierung und Erkennung der Spielfeldzonen
 
@@ -43,7 +41,7 @@ euch  auch einen Überblick über Sprites
 und Skripte verschaffen, die wir im folgenden genauer erläutern werden.
 
 
-###Beginn des Spiels
+###Beginn des Spiels<a name="beginn"></a>
 
 Um das Spiel zu starten, muss die
 grüne Fahne geklickt werden. Auf dem folgenden Bild seht ihr das Programm des
@@ -70,7 +68,7 @@ Anweisungen, die Nachricht „Spiel gestartet!“. Diese Nachricht kann von
 weiteren Sprites empfangen werden und sie anweisen, ihr Programm zu starten. 
 
 
-###Zeichnen des Tic-Tac-Toe Feldes (Spielfeldgitter)
+###Zeichnen des Tic-Tac-Toe Feldes (Spielfeldgitter)<a name="feld"></a>
 
 Nach Beginn des Spiels wird ein Spielfeld von Sprite1
 aufgemalt. Dieses Gitter besteht aus drei Zeilen und drei Spalten und ist
@@ -98,7 +96,7 @@ Auf den folgenden Bildern ist zu erkennen, wie der Block,
 der den Sprite dazu anweist, das 33 Spielfeld auf den Hintergrund
 aufzubringen, in drei Schritten entsteht:
 
-1. Zunächst haben wir den Block
+1.Zunächst haben wir den Block
 „Make Tile of Size ...“ erstellt, mithilfe unseres Vorwissens aus den
 Tutorials. Damit die Größe der Spielfeldzellen auch nachträglich angepasst
 werden kann, haben wir die Kantenlänge nicht definiert, sondern eine Variable
@@ -112,7 +110,7 @@ relevant.
 
 ![Bild03](bilder/Bild03.png "Regelung der Größe des Spielfeldes")
 
-2. Wie bereits angedeutet, werden
+2.Wie bereits angedeutet, werden
 im nächsten Schritt mehrere Spielfeldzellen zu einer Reihe zusammengefügt,
 dessen Länge von der Variable „Number of Tiles“ definiert wird. Dabei kann der
 Vorgang, ein Quadrat von gleichem Start- und Endpunkt zu zeichnen, beliebig oft
@@ -120,7 +118,7 @@ wiederholt werden, im Falle von Tic-Tac-Toe genau dreimal.
 
 ![Bild04](bilder/Bild04.png "Programmierung der Spielfeldzellen")
 
-3. Im dritten Schritt werden
+3.Im dritten Schritt werden
 mehrere Reihen, unter Einführung einer weiteren Variable („Number of Rows“), zu
 Spalten zusammengefügt. Da der Sprite zu einem universalen Starpunkt
 zurückkehren muss, um eine neue Reihe abzubrechen, sieht das Programm komplizierter
@@ -135,7 +133,7 @@ nicht zum Startpunkt zurückkehren, da er keine neue Zeile anbrechen muss.
 ![Bild05](bilder/Bild05.png "Zeichnung der Spielfeldzellen")
 
 
-###Benennung, Nummerierung und Erkennung der Spielfeldzellen
+###Benennung, Nummerierung und Erkennung der Spielfeldzellen<a name="zellen"></a>
 
 In diesem Abschnitt der
 Dokumentation geht es darum, wie es dazu kommt, dass die Speilfeldmarkierungen
@@ -202,7 +200,7 @@ Auf diesem Bild ist der Inhalt des Reporters „Which Tile?“ zu erkennen.
 ![Bild09](bilder/Bild09.png "Inhalt Which Tile?")
 
 
-###Markierungen der Spieler (Sprite2 und Sprite3)
+###Markierungen der Spieler (Sprite2 und Sprite3)<a name="markierung"></a>
 
 Nun zu den Markierungen, also den
 Färbungen der Spielfeldzellen in der Farbe, die dem Spieler entspricht, der den
@@ -270,7 +268,7 @@ dem Spielfeld zu machen. Das Ufo sagt nach einem vollendeten Spielzug:
 Spielzug: „Ufo, zeig, was du kannst!“
 
 
-###Automatische Registrierung und Ankündigung des Gewinners
+###Automatische Registrierung und Ankündigung des Gewinners<a name="ankündigung"></a>
 
 Bisher kann also ein Tic-Tac-Toe
 Feld von Sprite1 auf den Hintergrund (Stage) gezeichnet werden und Markierungen
@@ -387,7 +385,7 @@ y: 0. Nach der Bewegung macht der Sprite sich für den Spieler unsichtbar
 werden.
 
 
-###Automatische Registrierung und Ankündigung eines Gleichstandes
+###Automatische Registrierung und Ankündigung eines Gleichstandes<a name="registrierung"></a>
 
 Beim Tic-Tac-Toe spielen kann es
 natürlich auch passieren, dass es keinen Gewinner / Verlierer gibt, obwohl das
@@ -420,7 +418,7 @@ Durch Klicken der grünen Fahne kann das Spiel nun von neuem
 beginnen.
 
  
-###Probleme und Hindernisse beim Programmieren:
+###Probleme und Hindernisse beim Programmieren:<a name="probleme"></a>
 
 Durch unsere mangelnde
 Programmier-Erfahrung hat das Tic-Tac-Toe Spiel kleinere Fehler, zu deren
@@ -458,7 +456,7 @@ zufriedenstellenden Ergebnis geführt hat, für den, der die standardisierten
 Tic-Tac-Toe Regeln verstehen und anwenden kann. 
 
 
-###Design von Stage und Sprites 
+###Design von Stage und Sprites<a name="design"></a>
 
 Wir wählten als unseren Hintergrund eine Galaxie. Dort soll das Tic-Tac-Toe Spiel stattfinden.
 
