@@ -497,8 +497,7 @@ einen Saturn.
 
 ![Bild30](bilder/Bild30.png "Saturn")
 
-Passend zu der Galaxie
-spielt, ist Spieler eins (Sprite3) ein Ufo.
+Passend zu der Galaxie, ist Spieler eins (Sprite3) ein Ufo.
 
 ![Bild31](bilder/Bild31.png "Ufo")
 
