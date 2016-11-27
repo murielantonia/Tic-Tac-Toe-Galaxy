@@ -225,7 +225,8 @@ Mitte mussten für jede der neun Zellen definiert und mit dem oben genannten
 Reporter in Verbindung gebracht werden. Die Bilder stellen zwar den zweiten
 Schritt des Programmierens dar, die hier gewählte Chronologie ist für den Leser
 jedoch leichter zu verstehen und begreifen.
-*Bild*
+
+![Bild10](bilder/Bild10.png "Programm des ersten Sprites")
 
 
 Von der Mitte der jeweiligen
@@ -245,16 +246,16 @@ Programm endgültig designt haben, hatten die Sprites noch rote und blaue
 Markierungen und selbst die entsprechende Farbe. „Rot“ entspricht nun der
 gelben Markierung des Ufos, „Blau“ entspricht der grauen Markierung des
 Astronauten.
-*Bild*
 
+![Bild11](bilder/Bild11.png "Markierung der Spieler")
 
 Im Verlauf des Spiels haben beide
 Spieler die Möglichkeit, die Sprites auf eine der Spielfeldzellen zu ziehen,
 und sie dort abzusetzen, um eine Markierung vorzunehmen. Dazu werden die eben erklärten
 und erstellten Blöcke genutzt, die ein bestimmtes Feld in einer bestimmten
 Farbe markieren können.
-*Bild*
 
+![Bild12](bilder/Bild12.png "MArkierung in verschiedenen Farben")
 
 Nachdem die Sprites also die
 gewollte und gewünschte Spielfeldzelle markiert haben, senden sie zwei
@@ -266,8 +267,8 @@ werden, die Maus weiterzugeben und mit dem nächsten Sprite eine Markierung auf
 dem Spielfeld zu machen. Das Ufo sagt nach einem vollendeten Spielzug:
 „Astronaut, du bist an der Reihe!“. Der Astronaut sagt nach einem vollendeten
 Spielzug: „Ufo, zeig, was du kannst!“
-*Bild*
 
+![Bild013](bilder/Bild13.png "Sprechen der Spieler")
 
 ###Automatische Registrierung und Ankündigung des Gewinners
 
@@ -282,7 +283,7 @@ Variablen eingeführt, die einem Feld und einer Farbe zugeteilt werden, und den
 booleschen Wert „True“ annehmen, sobald auf genau ihrem Feld eine Markierung
 von genau ihrer Farbe vorgenommen wird. 
 
-*Bild*
+![Bild14](bilder/Bild14.png "Variablen True")
 Am
 Anfang des Spiels, noch bevor Sprite2 und Sprite3 für den Spieler zu sehen
 sind, setzen sie die Variablen ihrer jeweiligen Farbe zurück, auf den
@@ -292,8 +293,8 @@ zugehörigen Variablen Blau1 - Blau9 zurück. Dies geschieht, nachdem sie die
 Broadcast-Nachricht „Spielfeld vorbereitet!“ von Sprite1, in Gestalt eines
 Saturns, erhalten haben. Der zugehörige Programmteil ist auf diesen Bildern zu
 erkennen:
-*Bild*
 
+![Bild15](bilder/Bild15.png "Variablen False")
 
 Sobald jedoch eine der
 Spielfeldzellen in einer der Farben gefärbt wurde, muss die dazugehörige Variable
@@ -303,8 +304,8 @@ Broadcast-Nachricht „Feld markieren: Blau!“ Sie empfangen diese Nachrichten
 selbst, anstatt sie an den jeweils anderen weiterzugeben. Auf den folgenden
 Screenshots ist das Programm abgebildet, welches von diesen Broadcasts
 ausgelöst wird. 
-*Bild*
 
+![Bild016](bilder/Bild016.png "Veränderung der Variable zu True")
 
 Übersetzung: Der Reporter „Which
 Tile?“ wird in insgesamt neun If-Bedingungen den Nummern der Spielfeldzellen
@@ -336,8 +337,8 @@ ist, müssen die Variablen Rot1, Rot2 und Rot3 zwangsläufig der Wahrheit
 entsprechen. Der Spielleiter registriert und annonciert den Gewinner, nachdem
 er die Broadcast-Nachricht „Gewinner steht fest!“ abgegeben hat. Die
 dazugehörigen Skripte sind auf den folgenden Screenshots zu erkennen.
-*Bild*
 
+![Bild17](bilder/Bild17.png "Skripte")
 
 Für die Ankündigung des Gewinners
 haben wir einen individuellen Block erstellt. Bevor dieser in Kraft tritt,
@@ -346,7 +347,9 @@ Layout und Design nicht zu stören. Sie erhalten die eben genannte
 Broadcast-nachricht „Gewinner steht fest!“ und verstecken sich dann, sodass der
 Tic-Tac-Toe Spieler sie nicht mehr erkennen kann. Das hier abgebildete
 Programmstück ist in den Skripten beider Sprites vermerkt.
-*Bild*
+
+![Bild18](bilder/Bild18.png "Gewinner Block")
+
 Nun
 kann der Spielleiter ungestört den Gewinner küren. Dazu nimmt er die Gestalt
 des Gewinners an, zieht also ein Ufo- oder Astronautenkostüm an, auf denen, in
@@ -354,8 +357,8 @@ blau, das Textbanner „Gewinner“ steht. Der Sprite befindet sich, in dieser
 Form, zunächst in der Mitte des Spielfeldes und bewegt sich dann auf und ab, um
 die freudige Nachricht zusätzlich zu unterstreichen. So sieht das Skript von
 Sprite2 (Rot) und Sprie3 (Blau) dazu aus:
-*Bild*
 
+![Bild019](bilder/Bild19.png "Skript Gewinner")
 
 Übersetzung: Der „Announce: Red
 wins!“-Block, der unter den Kategorien „Motion“ und „Command“ abgelegt ist,
@@ -380,11 +383,11 @@ werden.
 ###Automatische Registrierung und Ankündigung eines Gleichstandes
 
 Beim Tic-Tac-Toe spielen kann es
-natürlich auch passen, dass es keinen Gewinner / Verlierer gibt, obwohl das
+natürlich auch passieren, dass es keinen Gewinner / Verlierer gibt, obwohl das
 Spielfeld schon voll von Markierungen ist. Auch diesen Fall haben wir in
 unserem Programm bedacht. Auf dem folgenden Screenshot ist das Skript dazu abgebildet:
-*Bild*
 
+![Bild20](bilder/Bild20.png "Skript unentschieden")
 
 Erinnerung: Sobald Sprite2 und
 Sprite3 auf eine Spielfeldzelle gezogen werden, geben sie zwei
