@@ -1,7 +1,7 @@
 # Tic-Tac-Toe-Galaxy
 ####Inhaltsverzeichnis:
 
-* Idee
+[Idee](#idee)
 
 * Brainstorming 
 
@@ -22,7 +22,7 @@
 * Design von Stage und Sprites
 
 
-###Idee
+###Idee<a name="idee"></a>
 
 Willkommen in der Tic-Tac-Toe
 Galaxy. Bei diesem Projekt handelt es sich, wie dessen Name und Titel bereits
