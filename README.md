@@ -493,12 +493,12 @@ Gewinnen kann Spieler eins oder Spieler zwei…
 
 Gewinnt Spieler eins, erscheint ein Ufo mit dem Schriftzug „Gewinner“.
 
-![Bild35](bilder/Bild35.png "Gewinner Ufo")
+![Bild36](bilder/Bild36.png "Gewinner Ufo")
 
 Gewinnt Spieler zwei, so erscheint ein Astronaut mit dem
 Schriftzug  „Gewinner“.
 
-![Bild336](bilder/Bild36.png "Gewinner Astronaut")
+![Bild35](bilder/Bild35.png "Gewinner Astronaut")
 
 Gewinnt keiner der Spieler, so erscheint (passend zum Weltall) ein Alien, mit dem
 Schriftzug „Gleichstand“.
