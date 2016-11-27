@@ -471,7 +471,7 @@ Wir wählten als unseren Hintergrund eine Galaxie. Dort soll das Tic-Tac-Toe Spi
 Da unser Tic-Tac-Toe Spiel im Welltall stattfindet, begrüßt eine Rakete (Sprite1)
 den Spieler.
 
-![Bild32](bilder/Bild32.png "Rakete")
+
 
 Für den zweiten Sprite, welcher das Tic-Tac-Toe Spielfeld zeichnet, nahmen wir
 einen Saturn.
@@ -481,11 +481,11 @@ einen Saturn.
 Passend zu der Galaxie
 spielt, ist Spieler eins (Sprite3) ein Ufo.
 
-![Bild33](bilder/Bild33.png "Ufo")
+![Bild31](bilder/Bild31.png "Ufo")
 
 Spieler zwei (Sprite4) ist ein Astronaut.
 
-![Bild31](bilder/Bild31.png "Astronaut")
+![Bild32](bilder/Bild32.png "Astronaut")
 
 Gewinnen kann Spieler eins oder Spieler zwei…
 
