@@ -466,12 +466,12 @@ Tic-Tac-Toe Regeln verstehen und anwenden kann.
 
 Wir wählten als unseren Hintergrund eine Galaxie. Dort soll das Tic-Tac-Toe Spiel stattfinden.
 
-![Bild30](bilder/Bild30.png "Galaxy")
+![Bild33](bilder/Bild33.png "Galaxy")
 
 Da unser Tic-Tac-Toe Spiel im Welltall stattfindet, begrüßt eine Rakete (Sprite1)
 den Spieler.
 
-![Bild33](bilder/Bild33.png "Rakete")
+![Bild30](bilder/Bild30.png "Rakete")
 
 Für den zweiten Sprite, welcher das Tic-Tac-Toe Spielfeld zeichnet, nahmen wir
 einen Saturn.
