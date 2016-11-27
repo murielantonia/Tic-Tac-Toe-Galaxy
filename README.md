@@ -42,6 +42,7 @@ klickt auf die grüne Fahne, um das Spiel zu beginnen. Natürlich könnt ihr
 euch  auch einen Überblick über Sprites
 und Skripte verschaffen, die wir im folgenden genauer erläutern werden.
 
+
 ###Beginn des Spiels
 
 Um das Spiel zu starten, muss die
@@ -53,7 +54,6 @@ wo er den Spieler dazu auffordert, ihn zu klicken, damit das Spiel beginnt.
 ![Bild01](bilder/Bild01.png "Programm des ersten Sprites")
 
 Übersetzung:
-
 Sobald die grüne Fahne geklickt
 wurde, reagiert der „When Clicked“ –Block und startet das Programm. Diesem
 folgend befreit der Sprite den Hintergrund von Spielfeld und Markierungen aus
@@ -69,6 +69,7 @@ des „Broadcast“-Blockes vermittelt der Sprite, nach Befolgung der übrigen
 Anweisungen, die Nachricht „Spiel gestartet!“. Diese Nachricht kann von
 weiteren Sprites empfangen werden und sie anweisen, ihr Programm zu starten. 
 
+
 ###Zeichnen des Tic-Tac-Toe Feldes (Spielfeldgitter)
 
 Nach Beginn des Spiels wird ein Spielfeld von Sprite1
@@ -79,7 +80,6 @@ vielen als herkömmliches Tic-Tac-Toe Spielfeld bekannt.
 
 
 Übersetzung:
-
 Nachdem Sprite1 die
 Broadcast-Nachricht „Spiel gestartet!“ von Sprite5 erhalten hat, zeigt er sich.
 Er hat ein Saturn-Kostüm an! In diesem Programmteil nimmt der Sprite die
@@ -112,7 +112,6 @@ relevant.
 
 ![Bild03](bilder/Bild03.png "Regelung der Größe des Spielfeldes")
 
-
 2. Wie bereits angedeutet, werden
 im nächsten Schritt mehrere Spielfeldzellen zu einer Reihe zusammengefügt,
 dessen Länge von der Variable „Number of Tiles“ definiert wird. Dabei kann der
@@ -120,7 +119,6 @@ Vorgang, ein Quadrat von gleichem Start- und Endpunkt zu zeichnen, beliebig oft
 wiederholt werden, im Falle von Tic-Tac-Toe genau dreimal.
 
 ![Bild04](bilder/Bild04.png "Programmierung der Spielfeldzellen")
-
 
 3. Im dritten Schritt werden
 mehrere Reihen, unter Einführung einer weiteren Variable („Number of Rows“), zu
@@ -199,8 +197,7 @@ jede Position des Sprites in einer der neun Spielfeldzellen abhängig von der
 Nummer der Zeile und der Nummer der Spalte, also von seinen Koordinaten, deren
 Verständnis wir in mehreren Schritten erheblich erleichtert haben.
 
-Auf diesem Bild ist der Inhalt
-des Reporters „Which Tile?“ zu erkennen.
+Auf diesem Bild ist der Inhalt des Reporters „Which Tile?“ zu erkennen.
 
 ![Bild09](bilder/Bild09.png "Inhalt Which Tile?")
 
@@ -423,8 +420,7 @@ Durch Klicken der grünen Fahne kann das Spiel nun von neuem
 beginnen.
 
  
-###Probleme und
-Hindernisse beim Programmieren:
+###Probleme und Hindernisse beim Programmieren:
 
 Durch unsere mangelnde
 Programmier-Erfahrung hat das Tic-Tac-Toe Spiel kleinere Fehler, zu deren
@@ -470,8 +466,6 @@ Wir wählten als unseren Hintergrund eine Galaxie. Dort soll das Tic-Tac-Toe Spi
 
 Da unser Tic-Tac-Toe Spiel im Welltall stattfindet, begrüßt eine Rakete (Sprite1)
 den Spieler.
-
-
 
 Für den zweiten Sprite, welcher das Tic-Tac-Toe Spielfeld zeichnet, nahmen wir
 einen Saturn.
