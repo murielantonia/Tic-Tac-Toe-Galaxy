@@ -137,8 +137,7 @@ nicht zum Startpunkt zurückkehren, da er keine neue Zeile anbrechen muss.
 ![Bild05](bilder/Bild05.png "Zeichnung der Spielfeldzellen")
 
 
-###Benennung,
-Nummerierung und Erkennung der Spielfeldzellen
+###Benennung, Nummerierung und Erkennung der Spielfeldzellen
 
 In diesem Abschnitt der
 Dokumentation geht es darum, wie es dazu kommt, dass die Speilfeldmarkierungen
@@ -226,8 +225,9 @@ Reporter in Verbindung gebracht werden. Die Bilder stellen zwar den zweiten
 Schritt des Programmierens dar, die hier gewählte Chronologie ist für den Leser
 jedoch leichter zu verstehen und begreifen.
 
-![Bild10](bilder/Bild10.png "Programm des ersten Sprites")
+![Bild10](bilder/Bild10.png "Mark Certain Field Rot")
 
+![Bild11](bilder/Bild11.png "Mark Certain Field Blau")
 
 Von der Mitte der jeweiligen
 Spielfeldzelle aus beginnend, nimmt der Sprite nun wieder die Rolle des
@@ -247,7 +247,9 @@ Markierungen und selbst die entsprechende Farbe. „Rot“ entspricht nun der
 gelben Markierung des Ufos, „Blau“ entspricht der grauen Markierung des
 Astronauten.
 
-![Bild11](bilder/Bild11.png "Markierung der Spieler")
+![Bild12](bilder/Bild12.png "Mark Field Rot")
+
+![Bild13](bilder/Bild13.png "Mark Field Blau")
 
 Im Verlauf des Spiels haben beide
 Spieler die Möglichkeit, die Sprites auf eine der Spielfeldzellen zu ziehen,
@@ -255,7 +257,9 @@ und sie dort abzusetzen, um eine Markierung vorzunehmen. Dazu werden die eben er
 und erstellten Blöcke genutzt, die ein bestimmtes Feld in einer bestimmten
 Farbe markieren können.
 
-![Bild12](bilder/Bild12.png "MArkierung in verschiedenen Farben")
+![Bild14](bilder/Bild14.png "Markierung in verschiedenen Farben Rot")
+
+![Bild15](bilder/Bild15.png "Markierung in verschiedenen Farben Blau")
 
 Nachdem die Sprites also die
 gewollte und gewünschte Spielfeldzelle markiert haben, senden sie zwei
@@ -268,7 +272,6 @@ dem Spielfeld zu machen. Das Ufo sagt nach einem vollendeten Spielzug:
 „Astronaut, du bist an der Reihe!“. Der Astronaut sagt nach einem vollendeten
 Spielzug: „Ufo, zeig, was du kannst!“
 
-![Bild013](bilder/Bild13.png "Sprechen der Spieler")
 
 ###Automatische Registrierung und Ankündigung des Gewinners
 
@@ -283,9 +286,9 @@ Variablen eingeführt, die einem Feld und einer Farbe zugeteilt werden, und den
 booleschen Wert „True“ annehmen, sobald auf genau ihrem Feld eine Markierung
 von genau ihrer Farbe vorgenommen wird. 
 
-![Bild14](bilder/Bild14.png "Variablen True")
-Am
-Anfang des Spiels, noch bevor Sprite2 und Sprite3 für den Spieler zu sehen
+![Bild16](bilder/Bild16.png "Variablen Rot")
+
+Am Anfang des Spiels, noch bevor Sprite2 und Sprite3 für den Spieler zu sehen
 sind, setzen sie die Variablen ihrer jeweiligen Farbe zurück, auf den
 booleschen Wert „False“. Sprite2, also das Ufo, setzt die ihm zugehörigen
 Variablen Rot1 - Rot9 zurück. Sprite3, also der Astronaut, setzt die ihm
@@ -294,7 +297,9 @@ Broadcast-Nachricht „Spielfeld vorbereitet!“ von Sprite1, in Gestalt eines
 Saturns, erhalten haben. Der zugehörige Programmteil ist auf diesen Bildern zu
 erkennen:
 
-![Bild15](bilder/Bild15.png "Variablen False")
+![Bild17](bilder/Bild17.png "Variablen False Rot")
+
+![Bild18](bilder/Bild18.png "Variablen False Blau")
 
 Sobald jedoch eine der
 Spielfeldzellen in einer der Farben gefärbt wurde, muss die dazugehörige Variable
@@ -305,7 +310,9 @@ selbst, anstatt sie an den jeweils anderen weiterzugeben. Auf den folgenden
 Screenshots ist das Programm abgebildet, welches von diesen Broadcasts
 ausgelöst wird. 
 
-![Bild016](bilder/Bild016.png "Veränderung der Variable zu True")
+![Bild019](bilder/Bild019.png "Variable True Rot")
+
+![Bild20](bilder/Bild20.png "Variable True Blau")
 
 Übersetzung: Der Reporter „Which
 Tile?“ wird in insgesamt neun If-Bedingungen den Nummern der Spielfeldzellen
@@ -338,7 +345,10 @@ entsprechen. Der Spielleiter registriert und annonciert den Gewinner, nachdem
 er die Broadcast-Nachricht „Gewinner steht fest!“ abgegeben hat. Die
 dazugehörigen Skripte sind auf den folgenden Screenshots zu erkennen.
 
-![Bild17](bilder/Bild17.png "Skripte")
+![Bild21](bilder/Bild21.png "Skripte Rot")
+
+
+![Bild22](bilder/Bild22.png "Skripte Blau")
 
 Für die Ankündigung des Gewinners
 haben wir einen individuellen Block erstellt. Bevor dieser in Kraft tritt,
@@ -348,17 +358,18 @@ Broadcast-nachricht „Gewinner steht fest!“ und verstecken sich dann, sodass 
 Tic-Tac-Toe Spieler sie nicht mehr erkennen kann. Das hier abgebildete
 Programmstück ist in den Skripten beider Sprites vermerkt.
 
-![Bild18](bilder/Bild18.png "Gewinner Block")
+![Bild23](bilder/Bild23.png "Gewinner Block")
 
-Nun
-kann der Spielleiter ungestört den Gewinner küren. Dazu nimmt er die Gestalt
+Nun kann der Spielleiter ungestört den Gewinner küren. Dazu nimmt er die Gestalt
 des Gewinners an, zieht also ein Ufo- oder Astronautenkostüm an, auf denen, in
 blau, das Textbanner „Gewinner“ steht. Der Sprite befindet sich, in dieser
 Form, zunächst in der Mitte des Spielfeldes und bewegt sich dann auf und ab, um
 die freudige Nachricht zusätzlich zu unterstreichen. So sieht das Skript von
 Sprite2 (Rot) und Sprie3 (Blau) dazu aus:
 
-![Bild019](bilder/Bild19.png "Skript Gewinner")
+![Bild24](bilder/Bild24.png "Skript Gewinner Rot")
+
+![Bild25](bilder/Bild25.png "Skript Gewinner Blau")
 
 Übersetzung: Der „Announce: Red
 wins!“-Block, der unter den Kategorien „Motion“ und „Command“ abgelegt ist,
@@ -379,7 +390,6 @@ y: 0. Nach der Bewegung macht der Sprite sich für den Spieler unsichtbar
 werden.
 
 
-
 ###Automatische Registrierung und Ankündigung eines Gleichstandes
 
 Beim Tic-Tac-Toe spielen kann es
@@ -387,7 +397,7 @@ natürlich auch passieren, dass es keinen Gewinner / Verlierer gibt, obwohl das
 Spielfeld schon voll von Markierungen ist. Auch diesen Fall haben wir in
 unserem Programm bedacht. Auf dem folgenden Screenshot ist das Skript dazu abgebildet:
 
-![Bild20](bilder/Bild20.png "Skript unentschieden")
+![Bild26](bilder/Bild26.png "Skript unentschieden")
 
 Erinnerung: Sobald Sprite2 und
 Sprite3 auf eine Spielfeldzelle gezogen werden, geben sie zwei
@@ -406,16 +416,14 @@ Größe (75%), an, begibt sich in die Mitte des Spielfeldes, sagt „Das habt ih
 beide gleichermaßen versiebt! Gratulation“, wartet fünf Sekunden und versteckt
 sich anschließend. Das Programm dazu ist analog zu dem Block „Announce: Red /
 Blue wins!“ und relativ selbsterklärend: 
-*Bild*
 
+![Bild27](bilder/Bild27.png "Spruch unentschieden")
 
 Durch Klicken der grünen Fahne kann das Spiel nun von neuem
 beginnen.
 
  
-
-
-Probleme und
+###Probleme und
 Hindernisse beim Programmieren:
 
 Durch unsere mangelnde
@@ -431,8 +439,10 @@ Spieler auffordern, seinen eigenen Sprite auf das Spielfeld zu ziehen, diese
 Sprechblasen sind jedoch nicht verbindlich und können leicht umgangen werden.
 Zudem machen wir uns hier das Allgemeinwissen der Spieler zu nutze. Jeder weiß,
 wie Tic-Tac-Toe funktioniert oder funktionieren soll.
-*Bild*
 
+![Bild28](bilder/Bild28.png "Problem Ufo")
+
+![Bild29](bilder/Bild29.png "Problem Astronaut")
 
 Der zweite Fehler im Programm
 hängt eng mit dem ersten zusammen. Man kann nämlich eine Markierung mit seiner
@@ -452,43 +462,48 @@ zufriedenstellenden Ergebnis geführt hat, für den, der die standardisierten
 Tic-Tac-Toe Regeln verstehen und anwenden kann. 
 
 
-
 ###Design von Stage und Sprites 
 
 Wir wählten als unseren Hintergrund eine Galaxie. Dort soll das Tic-Tac-Toe Spiel stattfinden.
-*Bild*
-Da
-unser Tic-Tac-Toe Spiel im Welltall stattfindet, begrüßt eine Rakete (Sprite1)
+
+![Bild30](bilder/Bild30.png "Galaxy")
+
+Da unser Tic-Tac-Toe Spiel im Welltall stattfindet, begrüßt eine Rakete (Sprite1)
 den Spieler.
-*Bild*
-Für
-den zweiten Sprite, welcher das Tic-Tac-Toe Spielfeld zeichnet, nahmen wir
+
+![Bild31](bilder/Bild31.png "Rakete")
+
+Für den zweiten Sprite, welcher das Tic-Tac-Toe Spielfeld zeichnet, nahmen wir
 einen Saturn.
-*Bild*
+
+![Bild32](bilder/Bild32.png "Saturn")
+
 Passend zu der Galaxie
 spielt, ist Spieler eins (Sprite3) ein Ufo.
-*Bild*
-Spieler
-zwei (Sprite4) ist ein Astronaut.
-*Bild*
-*Bild*
 
+![Bild33](bilder/Bild33.png "Ufo")
+
+Spieler zwei (Sprite4) ist ein Astronaut.
+
+![Bild34](bilder/Bild34.png "Astronaut")
 
 Gewinnen kann Spieler eins oder Spieler zwei…
-*Bild*
-Gewinnt
-Spieler eins, erscheint ein Ufo mit dem Schriftzug „Gewinner“.
-*Bild*
 
+![Bild34](bilder/Bild34.png "Drei Ausgangsspieler")
+
+Gewinnt Spieler eins, erscheint ein Ufo mit dem Schriftzug „Gewinner“.
+
+![Bild35](bilder/Bild35.png "Gewinner Ufo")
 
 Gewinnt Spieler zwei, so erscheint ein Astronaut mit dem
 Schriftzug  „Gewinner“.
-*Bild*
-Gewinnt
-keiner der Spieler, so erscheint (passend zum Weltall) ein Alien, mit dem
+
+![Bild336](bilder/Bild36.png "Gewinner Astronaut")
+
+Gewinnt keiner der Spieler, so erscheint (passend zum Weltall) ein Alien, mit dem
 Schriftzug „Gleichstand“.
 
-
+![Bild37](bilder/Bild37.png "Unentschieden Alien")
 
 
 
