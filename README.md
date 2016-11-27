@@ -75,7 +75,7 @@ Nach Beginn des Spiels wird ein Spielfeld von Sprite1
 aufgemalt. Dieses Gitter besteht aus drei Zeilen und drei Spalten und ist
 vielen als herkömmliches Tic-Tac-Toe Spielfeld bekannt. 
 
-![Bild01](bilder/Bild02.png "Programierung des Tic-Tac-Toe Spielfelds")
+![Bild02](bilder/Bild02.png "Programierung des Tic-Tac-Toe Spielfelds")
 
 
 Übersetzung:
@@ -99,7 +99,7 @@ der den Sprite dazu anweist, das 33 Spielfeld auf den Hintergrund
 aufzubringen, in drei Schritten entsteht:
 
 1. Zunächst haben wir den Block
-„Make Tile of Size ___“ erstellt, mithilfe unseres Vorwissens aus den
+„Make Tile of Size ...“ erstellt, mithilfe unseres Vorwissens aus den
 Tutorials. Damit die Größe der Spielfeldzellen auch nachträglich angepasst
 werden kann, haben wir die Kantenlänge nicht definiert, sondern eine Variable
 eingefügt. Diese nennt sich „Tile Size“ und beschreibt die Anzahl von Schritten,
@@ -109,7 +109,8 @@ Bewegung an der Stelle aufhört, an der sie angefangen hat, weshalb eine der
 vier Kanten doppelt gezeichnet wird. Das ist nicht für das Zeichnen einzelner
 Spielfeldzellen, sondern für das Zeichnen einer Reihe von Spielfeldzellen
 relevant.
-*Bild*
+
+![Bild03](bilder/Bild03.png "Regelung der Größe des Spielfeldes")
 
 
 2. Wie bereits angedeutet, werden
@@ -117,7 +118,8 @@ im nächsten Schritt mehrere Spielfeldzellen zu einer Reihe zusammengefügt,
 dessen Länge von der Variable „Number of Tiles“ definiert wird. Dabei kann der
 Vorgang, ein Quadrat von gleichem Start- und Endpunkt zu zeichnen, beliebig oft
 wiederholt werden, im Falle von Tic-Tac-Toe genau dreimal.
-*Bild*
+
+![Bild04](bilder/Bild04.png "Programmierung der Spielfeldzellen")
 
 
 3. Im dritten Schritt werden
@@ -131,7 +133,8 @@ Anschließend zeigt er nach oben und macht eine Anzahl von Schritten, die der
 Kantenlänge der Felder entspricht. Dies ist der Punkt, von dem er beginnen
 kann, eine neue Reihe zu zeichnen. Nur bei der letzten Zeile braucht der Sprite
 nicht zum Startpunkt zurückkehren, da er keine neue Zeile anbrechen muss.
-*Bild*
+
+![Bild05](bilder/Bild05.png "Zeichnung der Spielfeldzellen")
 
 
 ###Benennung,
@@ -165,20 +168,24 @@ in Form einer booleschen Variable gibt.
 Hier sind alle Reporter
 aufgelistet, die prüfen, ob der Sprite in Reihe 1, 2, 3 oder in Spalte 1, 2, 3
 liegt.
-*Bild*
+
+![Bild06](bilder/Bild06.png "Reporter")
+
 Beispiel
 Spalte: Damit die Bedingung, der Sprite befände sich in der ersten Spalte, der
 Wahrheit entspricht, muss dessen X-Koordinate einen Wert zwischen -150 und -50
 annehmen. Eine Spalte ist nämlich 100 Schritte breit, das Zentrum des
 Spielfeldes befindet sich bei x: 0 und y: 0.
-*Bild*
+
+![Bild07](bilder/Bild07.png "Beispiel Gitter")
+
 Beispiel
 Zeile: Damit die Bedingung, der Sprite befände sich in der ersten Zeile, der
 Wahrheit entspricht, muss dessen Y-Koordinate einen Wert zwischen 150 und 50
 annehmen. Eine Zeile ist nämlich 100 Schritte hoch, das Zentrum des Spielfeldes
 befindet sich bei x: 0 und y: 0. 
-*Bild*
 
+![Bild08](bilder/Bild08.png "Beispiel Zeile")
 
 Im nächsten Schritt, der
 Erstellung des „Which Tile?“-Reporters, werden die Kriterien von Zeile und
@@ -195,7 +202,8 @@ Verständnis wir in mehreren Schritten erheblich erleichtert haben.
 
 Auf diesem Bild ist der Inhalt
 des Reporters „Which Tile?“ zu erkennen.
-*Bild*
+
+![Bild09](bilder/Bild09.png "Inhalt Which Tile?")
 
 
 ###Markierungen der Spieler (Sprite2 und Sprite3)
