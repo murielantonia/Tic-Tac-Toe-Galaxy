@@ -50,7 +50,7 @@ ersten Sprites (Sprite5): Auf einem neutralen Hintergrund erscheint der Sprite
 in Gestalt eines Space-Shuttles. Er bewegt sich in die Mitte des Spielfeldes,
 wo er den Spieler dazu auffordert, ihn zu klicken, damit das Spiel beginnt. 
 
-![Bild01](bilder/Bild01.png "Test 01")
+![Bild01](bilder/Bild01.png "Programm des ersten Sprites")
 
 Übersetzung:
 
