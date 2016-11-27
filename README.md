@@ -307,7 +307,7 @@ selbst, anstatt sie an den jeweils anderen weiterzugeben. Auf den folgenden
 Screenshots ist das Programm abgebildet, welches von diesen Broadcasts
 ausgelöst wird. 
 
-![Bild019](bilder/Bild019.png "Variable True Rot")
+![Bild19](bilder/Bild019.png "Variable True Rot")
 
 ![Bild20](bilder/Bild20.png "Variable True Blau")
 
