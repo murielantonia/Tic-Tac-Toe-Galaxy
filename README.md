@@ -9,20 +9,20 @@
 
 [Zeichnendes Tic-Tac-Toe Feldes](#feld) 
 
-[Bennenung, Nummerierung und Erkennung der Spielfeldzonen](#spielfeld)
+[Bennenung, Nummerierung und Erkennung der Spielfeldzonen](#feld)
 
 [Markierung der Spieler](#markierung)
 
 [Automatische Registrierung und Ankündigung der Gewinners](#ankündigung)
 
-[Automatische Registrierung und Ankündigung eines Gleichstandes](registrierung)
+[Automatische Registrierung und Ankündigung eines Gleichstandes](#registrierung)
 
 [Probleme und Hindernisse beim Programmmieren](#probleme)
 
 [Design von Stage und Sprites](#design)
 
 
-###Bekanntmachung mit Snap!
+###Bekanntmachung mit Snap!<a name="snap"></a>
 
 Nachdem wir uns zu Hause einzeln
 über die unterschiedlichen Programme informiert hatten, besuchten wir gemeinsam
