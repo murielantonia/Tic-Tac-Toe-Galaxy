@@ -1,23 +1,50 @@
 # Tic-Tac-Toe-Galaxy
 ####Inhaltsverzeichnis:
 
+[Bekanntmachung mit Snap!](#snap)
+
 [Idee](#idee)
 
-[Beginn des Spiels](beginn)
+[Beginn des Spiels](#beginn)
 
-[Zeichnendes Tic-Tac-Toe Feldes](feld) 
+[Zeichnendes Tic-Tac-Toe Feldes](#feld) 
 
-* Bennenung, Nummerierung und Erkennung der Spielfeldzonen
+[Bennenung, Nummerierung und Erkennung der Spielfeldzonen](#spielfeld)
 
-* Markierung der Spieler
+[Markierung der Spieler](#markierung)
 
-* Automatische Registrierung und Ankündigung der Gewinners
+[Automatische Registrierung und Ankündigung der Gewinners](#ankündigung)
 
-* Automatische Registrierung und Ankündigung eines Gleichstandes
+[Automatische Registrierung und Ankündigung eines Gleichstandes](registrierung)
 
-* Probleme und Hindernisse beim Programmmieren
+[Probleme und Hindernisse beim Programmmieren](#probleme)
 
-* Design von Stage und Sprites
+[Design von Stage und Sprites](#design)
+
+
+###Bekanntmachung mit Snap!
+
+Nachdem wir uns zu Hause einzeln
+über die unterschiedlichen Programme informiert hatten, besuchten wir gemeinsam
+die Homepages der für uns interessanten Optionen: „Greenfoot“ und „The Beauty
+and Joy of Computing“
+
+Wir suchten uns einige Tutorials
+zu „Greenfoot“ raus und starteten mit der „Wombats Welt“, um uns einen
+Überblick über die Anwendung zu verschaffen. Allerdings fanden wir keinen
+richtigen Zugang, hatten kein ausreichendes Grundwissen und waren skeptisch
+gegenüber der Bildungssoftware. Nach der Stunde waren wir uns noch unschlüssig,
+welche der beiden Anwendungen wir zum lernen nutzen wollten und nahmen uns ein „Greenfoot“
+Buch mit nach Hause, um uns weiter damit auseinanderzusetzen. 
+
+Schließlich entschieden wir uns für „Beauty
+and Joy of Computing“, da die bunten Farben der blockbasierten
+Programmierprache Snap! ansprechend und der Lehrplan (Curriculum) schüler- und
+studentenfreundlich organisiert war. Außerdem wir die Anwendung genutzt, an
+Schulen und Universitäten in hauptsächlich den USA. Somit gehören wir, als
+Schüler, zur Zielgruppe des Tutorials, was unsere Entscheidung zusätzlich
+beeinflusste. Überzeugt hat uns zudem das Argument des Programmtitels, welcher
+Schönheit und Freude des Programmierens verspricht.
 
 
 ###Idee<a name="idee"></a>
