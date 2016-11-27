@@ -74,7 +74,8 @@ weiteren Sprites empfangen werden und sie anweisen, ihr Programm zu starten.
 Nach Beginn des Spiels wird ein Spielfeld von Sprite1
 aufgemalt. Dieses Gitter besteht aus drei Zeilen und drei Spalten und ist
 vielen als herkömmliches Tic-Tac-Toe Spielfeld bekannt. 
-*Bild*
+
+![Bild01](bilder/Bild02.png "Programierung des Tic-Tac-Toe Spielfelds")
 
 
 Übersetzung:
