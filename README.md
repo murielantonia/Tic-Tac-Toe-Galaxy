@@ -525,7 +525,8 @@ Schriftzug „Gleichstand“.
 
 
 
-_Conclusion_
+##_Conclusion_
+
 *Wir sind sehr zufrieden mit dem Ergebnis unserer Arbeit. Wir haben es geschafft ein eigenes und bespielbares Tic-Tac-Toe Spiel zu erstellen. Wir haben uns ausführlích mit dem Programm Snap! befasst und dabei vieles neues gelernt. Nun sind wir einen Schritt weiter und freuen uns auf ein tolles neues Projekt!*
 
 
