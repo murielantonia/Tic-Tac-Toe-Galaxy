@@ -9,7 +9,7 @@
 
 [Zeichnendes Tic-Tac-Toe Feldes](#feld) 
 
-[Bennenung, Nummerierung und Erkennung der Spielfeldzonen](#feld)
+[Bennenung, Nummerierung und Erkennung der Spielfeldzellen](#zellen)
 
 [Markierung der Spieler](#markierung)
 
